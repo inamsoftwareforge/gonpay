@@ -3,28 +3,34 @@ $pageTitle = 'Legal Agreement - GoNpay';
 include 'components/header.php';
 ?>
 
-<div class="overflow-hidden1 bg-gray-50 pt-24"> <!-- Added pt-24 for proper spacing -->
-<!-- Hero Section with Handshake Image -->
-<section class="relative mb-12">
-<div class="h-84 md:h-80 w-full overflow-hidden1">
-<img alt="Legal Agreement Handshake" class="w-full h-full object-cover" src="images/legal-handshake.png"/>
-<div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
-<div class="text-center px-4">
-<h1 class="text-3xl md:text-4xl font-bold text-white mb-4"><?= $translations['legal_agreement'] ?? "Legal Agreement" ?></h1>
-<p class="text-white text-lg max-w-2xl mx-auto"><?= $translations['welcome_to_our_legal_agreement_page_here_we_provid'] ?? "Welcome to our legal agreement page, here we provide detailed important information about our terms and conditions to ensure that your rights are protected." ?></p>
-</div>
-</div>
-</div>
-</section>
-<!-- Legal Content Section -->
-<section class="container mx-auto px-4 sm:px-6 py-8 mb-16">
-<div class="flex flex-col lg:flex-row gap-10 relative">
-<!-- Sidebar Navigation - Fixed on Desktop -->
-<div class="lg:w-1/4 order-2 lg:order-1">
-<div class="bg-white rounded-lg shadow-sm p-6 lg:sticky lg:top-28" style="max-height: calc(100vh - 140px); overflow-y: auto;">
-<h3 class="text-lg font-bold mb-4 border-l-4 border-gonpay-orange pl-3"><?= $translations['sections'] ?? "Sections" ?></h3>
-<nav class="nav-sections">
-<ul class="space-y-3">
+<div class="overflow-hidden1 bg-gray-50 pt-24">
+    <!-- Added pt-24 for proper spacing -->
+    <!-- Hero Section with Handshake Image -->
+    <section class="relative mb-12">
+        <div class="h-84 md:h-80 w-full overflow-hidden1">
+            <img alt="Legal Agreement Handshake" class="w-full h-full object-cover" src="images/legal-handshake.png" />
+            <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
+                <div class="text-center px-4">
+                    <h1 class="text-3xl md:text-4xl font-bold text-white mb-4">
+                        <?= $translations['legal_agreement'] ?? "Legal Agreement" ?></h1>
+                    <p class="text-white text-lg max-w-2xl mx-auto">
+                        <?= $translations['welcome_to_our_legal_agreement_page_here_we_provid'] ?? "Welcome to our legal agreement page, here we provide detailed important information about our terms and conditions to ensure that your rights are protected." ?>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Legal Content Section -->
+    <section class="container mx-auto px-4 sm:px-6 py-8 mb-16">
+        <div class="flex flex-col lg:flex-row gap-10 relative">
+            <!-- Sidebar Navigation - Fixed on Desktop -->
+            <div class="lg:w-1/4 order-2 lg:order-1">
+                <div class="bg-white rounded-lg shadow-sm p-6 lg:sticky lg:top-28"
+                    style="max-height: calc(100vh - 140px); overflow-y: auto;">
+                    <h3 class="text-lg font-bold mb-4 border-l-4 border-gonpay-orange pl-3">
+                        <?= $translations['sections'] ?? "Sections" ?></h3>
+                    <nav class="nav-sections">
+                        <ul class="space-y-3">
                             <?php
                             // Legal sections data
                             $legalSections = [
@@ -47,24 +53,29 @@ include 'components/header.php';
                             foreach ($legalSections as $index => $section): 
                                 $isActive = $index === 0 ? 'text-gonpay-orange bg-orange-50' : 'text-gray-600';
                             ?>
-                                <li>
-<a class="nav-link text-sm block py-2 px-3 rounded-lg transition-all duration-200 hover:bg-gray-50 <?php echo $index + 1; ?>" data-section="section-<?php echo $isActive; ?>" href="#section-<?php echo $index + 1; ?>">
-                                        <?php echo $section; ?>
-                                    </a>
-</li>
+                            <li>
+                                <a class="nav-link text-sm block py-2 px-3 rounded-lg transition-all duration-200 hover:bg-gray-50 <?php echo $index + 1; ?>"
+                                    data-section="section-<?php echo $isActive; ?>"
+                                    href="#section-<?php echo $index + 1; ?>">
+                                    <?php echo $section; ?>
+                                </a>
+                            </li>
                             <?php endforeach; ?>
                         </ul>
-</nav>
-</div>
-</div>
-<!-- Main Content - Scrollable -->
-<div class="lg:w-3/4 order-1 lg:order-2 overflow-y-auto">
-<div class="bg-white rounded-lg shadow-sm p-6 md:p-8">
-<div class="mb-10">
-<h2 class="text-2xl md:text-3xl font-bold mb-6 text-gonpay-dark"><?= $translations['gonpay_consumer_agreement'] ?? "GoNpay Consumer Agreement" ?></h2>
-<p class="text-gray-600 mb-4"><?= $translations['this_agreement_outlines_the_terms_and_conditions_u'] ?? "This agreement outlines the terms and conditions under which legal services will be provided to clients. It details the scope of services, fees, responsibilities, and obligations of both parties, ensuring clarity and mutual understanding. Designed to protect the interests of both the legal service provider and the client, this agreement serves as a foundation for a professional relationship built on trust and transparency." ?></p>
-</div>
-                    
+                    </nav>
+                </div>
+            </div>
+            <!-- Main Content - Scrollable -->
+            <div class="lg:w-3/4 order-1 lg:order-2 overflow-y-auto">
+                <div class="bg-white rounded-lg shadow-sm p-6 md:p-8">
+                    <div class="mb-10">
+                        <h2 class="text-2xl md:text-3xl font-bold mb-6 text-gonpay-dark">
+                            <?= $translations['gonpay_consumer_agreement'] ?? "GoNpay Consumer Agreement" ?></h2>
+                        <p class="text-gray-600 mb-4">
+                            <?= $translations['this_agreement_outlines_the_terms_and_conditions_u'] ?? "This agreement outlines the terms and conditions under which legal services will be provided to clients. It details the scope of services, fees, responsibilities, and obligations of both parties, ensuring clarity and mutual understanding. Designed to protect the interests of both the legal service provider and the client, this agreement serves as a foundation for a professional relationship built on trust and transparency." ?>
+                        </p>
+                    </div>
+
                     <?php
                     // Legal content sections with dummy data
                     $legalContent = [
@@ -569,81 +580,81 @@ include 'components/header.php';
                     // Generate legal content sections
                     foreach ($legalContent as $section):
                     ?>
-                        <div class="mb-12 scroll-mt-24" id="<?php echo $section['id']; ?>">
-<h3 class="text-xl font-bold mb-4 text-gonpay-dark"><?php echo $section['title']; ?></h3>
-                            
-                            <?php if (!empty($section['content'])): ?>
-                                <p class="text-gray-600 mb-6"><?php echo $section['content']; ?></p>
-                            <?php endif; ?>
-                            
-                            <?php if (!empty($section['sub_sections'])): ?>
-                            <div class="space-y-6 mt-6 pl-4 border-l-2 border-gray-200">
-                                    <?php foreach ($section['sub_sections'] as $subSection): ?>
-                                        <div>
-<h4 class="font-semibold text-gray-800 mb-2"><?php echo $subSection['title']; ?></h4>
-<p class="text-gray-600"><?php echo $subSection['content']; ?></p>
-</div>
-                                    <?php endforeach; ?>
-                                </div>
-                            <?php endif; ?>
+                    <div class="mb-12 scroll-mt-24" id="<?php echo $section['id']; ?>">
+                        <h3 class="text-xl font-bold mb-4 text-gonpay-dark"><?php echo $section['title']; ?></h3>
+
+                        <?php if (!empty($section['content'])): ?>
+                        <p class="text-gray-600 mb-6"><?php echo $section['content']; ?></p>
+                        <?php endif; ?>
+
+                        <?php if (!empty($section['sub_sections'])): ?>
+                        <div class="space-y-6 mt-6 pl-4 border-l-2 border-gray-200">
+                            <?php foreach ($section['sub_sections'] as $subSection): ?>
+                            <div>
+                                <h4 class="font-semibold text-gray-800 mb-2"><?php echo $subSection['title']; ?></h4>
+                                <p class="text-gray-600"><?php echo $subSection['content']; ?></p>
+                            </div>
+                            <?php endforeach; ?>
                         </div>
+                        <?php endif; ?>
+                    </div>
                     <?php endforeach; ?>
-                    
-                 
+
+
                 </div>
-</div>
-</div>
-</section>
+            </div>
+        </div>
+    </section>
 </div>
 <!-- Add these styles -->
 <style>
-    /* Improved sticky sidebar behavior */
-    html {
-        scroll-behavior: smooth;
+/* Improved sticky sidebar behavior */
+html {
+    scroll-behavior: smooth;
+}
+
+@media (min-width: 1024px) {
+    .lg\:sticky {
+        position: sticky;
+        display: block;
+    }
+}
+
+@media (max-width: 1023px) {
+    .nav-sections {
+        display: flex;
+        overflow-x: auto;
+        padding-bottom: 1rem;
+        -webkit-overflow-scrolling: touch;
     }
 
-    @media (min-width: 1024px) {
-        .lg\:sticky {
-            position: sticky;
-            display: block;
-        }
-    }
-    
-    @media (max-width: 1023px) {
-        .nav-sections {
-            display: flex;
-            overflow-x: auto;
-            padding-bottom: 1rem;
-            -webkit-overflow-scrolling: touch;
-        }
-        
-        .nav-sections ul {
-            display: flex;
-            gap: 1rem;
-            padding-right: 1rem;
-        }
-        
-        .nav-sections li {
-            flex: 0 0 auto;
-        }
+    .nav-sections ul {
+        display: flex;
+        gap: 1rem;
+        padding-right: 1rem;
     }
 
-    .nav-link.active {
-        background-color: rgb(255 237 213);
-        color: #FF7A00;
+    .nav-sections li {
+        flex: 0 0 auto;
     }
-    
-    /* Ensure main content scrolls independently when needed */
-    .lg\:w-3\/4.overflow-y-auto {
-        max-height: 100%;
-    }
+}
+
+.nav-link.active {
+    background-color: rgb(255 237 213);
+    color: #FF7A00;
+}
+
+/* Ensure main content scrolls independently when needed */
+.lg\:w-3\/4.overflow-y-auto {
+    max-height: 100%;
+}
 </style>
 <!-- Add this JavaScript -->
 <script>
 document.addEventListener('DOMContentLoaded', function() {
     const sections = document.querySelectorAll('[id^="section-"]');
     const navLinks = document.querySelectorAll('.nav-link');
-    
+
     // Smooth scroll to section
     navLinks.forEach(link => {
         link.addEventListener('click', (e) => {
@@ -651,18 +662,19 @@ document.addEventListener('DOMContentLoaded', function() {
             const targetId = link.getAttribute('href');
             const targetSection = document.querySelector(targetId);
             const offset = 100; // Adjust scroll offset as needed
-            
+
             window.scrollTo({
                 top: targetSection.offsetTop - offset,
                 behavior: 'smooth'
             });
-            
+
             // Update active class immediately
-            navLinks.forEach(navLink => navLink.classList.remove('active', 'text-gonpay-orange', 'bg-orange-50'));
+            navLinks.forEach(navLink => navLink.classList.remove('active', 'text-gonpay-orange',
+                'bg-orange-50'));
             link.classList.add('active', 'text-gonpay-orange', 'bg-orange-50');
         });
     });
-    
+
     // Update active section on scroll
     function updateActiveSection() {
         const scrollPosition = window.scrollY;
@@ -671,12 +683,12 @@ document.addEventListener('DOMContentLoaded', function() {
             const sectionTop = section.offsetTop - 150;
             const sectionBottom = sectionTop + section.offsetHeight;
             const sectionId = section.getAttribute('id');
-            
+
             if (scrollPosition >= sectionTop && scrollPosition < sectionBottom) {
                 navLinks.forEach(link => {
                     link.classList.remove('active', 'text-gonpay-orange', 'bg-orange-50');
                     link.classList.add('text-gray-600');
-                    
+
                     if (link.getAttribute('href') === `#${sectionId}`) {
                         link.classList.remove('text-gray-600');
                         link.classList.add('active', 'text-gonpay-orange', 'bg-orange-50');
