@@ -61,7 +61,7 @@
       <div class="hidden md:flex items-center space-x-1 cursor-pointer group relative">
         <div class="flex items-center space-x-2 py-2 px-3 rounded-lg hover:bg-gray-50">
           <img id="selected-lang-flag" src="https://cdn.jsdelivr.net/npm/flag-icon-css@3.5.0/flags/4x3/<?= $currentFlag ?>.svg" alt="<?= $lang ?>" class="w-6 h-4">
-          <span id="selected-lang"><?= t($lang) ?></span>
+          <span id="selected-lang"><?= t($language) ?></span>
           <svg class="h-4 w-4 transition-transform group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
           </svg>

@@ -99,45 +99,46 @@ include 'components/header.php';
 </div>
 </section>
 <!-- PHP Array for Testimonials -->
-        <?php
-        $testimonials = [
-            [
-                'name' => 'Kristina P.',
-                'role' => 'Student',
-                'text' => 'Gonpay is fantastic for managing a wide variety of cards, from memberships to coupons, all in one app! It\'s a must-have for staying organized and making life easier.',
-                'image' => 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80',
-                'avatar' => 'https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80'
-            ],
-            [
-                'name' => 'Michael T.',
-                'role' => 'Business Owner',
-                'text' => 'As someone who carries multiple loyalty cards, this app has been a game-changer. I no longer forget which cards I have or miss out on rewards. Highly recommended!',
-                'image' => 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80',
-                'avatar' => 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80'
-            ],
-            [
-                'name' => 'David R.',
-                'role' => 'Software Engineer',
-                'text' => 'The UI is clean and intuitive. I appreciate how easy it is to add new cards and track my rewards. The notification feature for special offers is particularly useful.',
-                'image' => 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80',
-                'avatar' => 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80'
-            ],
-            [
-                'name' => 'Sarah J.',
-                'role' => 'Marketing Specialist',
-                'text' => 'Gonpay has simplified my shopping experience tremendously. The app is fast, reliable, and keeps all my loyalty cards in one place. The special offers are a nice bonus!',
-                'image' => 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80',
-                'avatar' => 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80'
-            ],
-            [
-                'name' => 'Alex K.',
-                'role' => 'Retail Manager',
-                'text' => 'From both a customer and business perspective, this app delivers. It\'s streamlined my personal loyalty cards and given me insights into customer retention for my store.',
-                'image' => 'https://images.unsplash.com/photo-1569913486515-b74bf7751574?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80',
-                'avatar' => 'https://images.unsplash.com/photo-1569913486515-b74bf7751574?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80'
-            ]
-        ];
-        ?>
+<?php
+    $testimonials = [
+        [
+            'name' => 'Kristina P.',
+            'role' => 'Student',
+            'text' => $translations['kristina_p'] ?? 'Gonpay is fantastic for managing a wide variety of cards, from memberships to coupons, all in one app! It\'s a must-have for staying organized and making life easier.',
+            'image' => 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80',
+            'avatar' => 'https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80'
+        ],
+        [
+            'name' => 'Michael T.',
+            'role' => 'Business Owner',
+            'text' => $translations['michael_t'] ?? 'As someone who carries multiple loyalty cards, this app has been a game-changer. I no longer forget which cards I have or miss out on rewards. Highly recommended!',
+            'image' => 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80',
+            'avatar' => 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80'
+        ],
+        [
+            'name' => 'David R.',
+            'role' => 'Software Engineer',
+            'text' => $translations['david_r'] ?? 'The UI is clean and intuitive. I appreciate how easy it is to add new cards and track my rewards. The notification feature for special offers is particularly useful.',
+            'image' => 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80',
+            'avatar' => 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80'
+        ],
+        [
+            'name' => 'Sarah J.',
+            'role' => 'Marketing Specialist',
+            'text' => $translations['sarah_j'] ?? 'Gonpay has simplified my shopping experience tremendously. The app is fast, reliable, and keeps all my loyalty cards in one place. The special offers are a nice bonus!',
+            'image' => 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80',
+            'avatar' => 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80'
+        ],
+        [
+            'name' => 'Alex K.',
+            'role' => 'Retail Manager',
+            'text' => $translations['alex_k'] ?? 'From both a customer and business perspective, this app delivers. It\'s streamlined my personal loyalty cards and given me insights into customer retention for my store.',
+            'image' => 'https://images.unsplash.com/photo-1569913486515-b74bf7751574?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80',
+            'avatar' => 'https://images.unsplash.com/photo-1569913486515-b74bf7751574?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80'
+        ]
+    ];
+?>
+
 
         <!-- Testimonials Section with Swiper -->
 <section class="py-24">
@@ -226,28 +227,28 @@ include 'components/header.php';
 <?php
 $faqs = [
     [
-        'question' => 'How do I add a new loyalty card?',
-        'answer' => 'Adding a new loyalty card is quick and easy! Just open the app, tap the "+" or "Add Card" button, then either scan the barcode on your card or enter the card number manually. You can also take a photo of the card for easy reference. Once saved, your card will be available anytime right from your phone.'
+        'question' => $translations['new_loyalty_card'] ?? 'How do I add a new loyalty card?',
+        'answer' => $translations['new_loyalty_card_answer'] ?? 'Adding a new loyalty card is quick and easy! Just open the app, tap the "+" or "Add Card" button, then either scan the barcode on your card or enter the card number manually. You can also take a photo of the card for easy reference. Once saved, your card will be available anytime right from your phone.'
     ],
     [
-        'question' => 'How do I view my existing loyalty cards?',
-        'answer' => 'To view your saved loyalty cards, just open the app and head to the "Cards" section. You’ll see a list of all your added cards—tap any card to view its barcode, number, and other details. It\'s like having your whole wallet in your pocket, minus the bulk!'
+        'question' => $translations['existing_loyalty_card'] ?? 'How do I view my existing loyalty cards?',
+        'answer' => $translations['existing_loyalty_card_answer'] ?? 'To view your saved loyalty cards, just open the app and head to the "Cards" section. You’ll see a list of all your added cards—tap any card to view its barcode, number, and other details. It\'s like having your whole wallet in your pocket, minus the bulk!'
     ],
     [
-        'question' => 'Can I delete a loyalty card?',
-        'answer' => 'Yes, you can delete any card whenever you like. Just go to the "Cards" section, tap on the card you want to remove, then look for the "More Options" (three dots) and afterwards "Delete". Confirm the deletion, and the card will be permanently removed from your app.'
+        'question' => $translations['delete_loyalty_card'] ?? 'Can I delete a loyalty card?',
+        'answer' => $translations['delete_loyalty_card_answer'] ?? 'Yes, you can delete any card whenever you like. Just go to the "Cards" section, tap on the card you want to remove, then look for the "More Options" (three dots) and afterwards "Delete". Confirm the deletion, and the card will be permanently removed from your app.'
     ],
     [
-        'question' => 'What happens if I lose my loyalty card?',
-        'answer' => 'No worries—if you\'ve added your card to the app, you can still use it without the physical version. Just open the app, find your card, and scan the barcode at the store. If you haven’t saved it yet, you may need to contact the loyalty program provider to recover your account or get a replacement.'
+        'question' => $translations['lose_loyalty_card'] ?? 'What happens if I lose my loyalty card?',
+        'answer' => $translations['lose_loyalty_card_answer'] ?? 'No worries—if you\'ve added your card to the app, you can still use it without the physical version. Just open the app, find your card, and scan the barcode at the store. If you haven’t saved it yet, you may need to contact the loyalty program provider to recover your account or get a replacement.'
     ],
     [
-        'question' => 'How do I update my loyalty card information?',
-        'answer' => 'To update your card details, go to the "Cards" section and tap on the card you want to edit. Then, choose the "Edit" or pencil icon to update the card number, name, or any other info. Don’t forget to save your changes when you’re done!'
+        'question' => $translations['loyalty_card_info'] ?? 'How do I update my loyalty card information?',
+        'answer' => $translations['loyalty_card_info_answer'] ?? 'To update your card details, go to the "Cards" section and tap on the card you want to edit. Then, choose the "Edit" or pencil icon to update the card number, name, or any other info. Don’t forget to save your changes when you’re done!'
     ],
     [
-        'question' => 'Where can I redeem my earnings?',
-        'answer' => 'You can redeem your earnings directly through the app, as long as the loyalty program supports it. Just tap on the relevant card, scan the barcode, and redeem your points just like you would with a physical card. If the app redirects you to the store or brand’s website, simply follow the on-screen instructions to complete your redemption.'
+        'question' => $translations['loyalty_card_redeem_earning'] ?? 'Where can I redeem my earnings?',
+        'answer' => $translations['loyalty_card_redeem_earning_answer'] ??  'You can redeem your earnings directly through the app, as long as the loyalty program supports it. Just tap on the relevant card, scan the barcode, and redeem your points just like you would with a physical card. If the app redirects you to the store or brand’s website, simply follow the on-screen instructions to complete your redemption.'
     ],
 ];
 

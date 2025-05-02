@@ -10,6 +10,17 @@ if (isset($_GET['lang'])) {
 }
 
 $lang = $_SESSION['lang'] ?? 'en';
+$language = $lang;
+
+if($lang === 'en') {
+    $language = 'English';
+} else if ($lang === 'lt') {
+    $language = 'Lithuanian';
+} else if ($lang === 'ee') {
+    $language = 'Estonian';
+} else if ($lang === 'lv') {
+    $language = 'Latvian';
+}
 
 $basePath = __DIR__ . '/../'; // project root
 $translations = json_decode(file_get_contents("$basePath/lang/$lang.json"), true);

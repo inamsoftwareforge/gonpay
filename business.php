@@ -59,12 +59,12 @@ include 'components/header.php';
 <div class="mb-8">
                     <?php
                     $benefits = array(
-                        'Getting more loyalty levels',
-                        'Getting sales and personalized offers',
-                        'Increasing customer return',
-                        'Setting up loyalty and payment cards',
-                        'Membership discounts and discount groups',
-                        'Earning points, redeeming and sales points'
+                        $translations['getting_more_loyalty_levels'] ?? 'Getting more loyalty levels',
+                        $translations['getting_sales_and_personalized_offers'] ?? 'Getting sales and personalized offers',
+                        $translations['increasing_customer_return'] ?? 'Increasing customer return',
+                        $translations['setting_up_loyalty_and_payment_cards'] ?? 'Setting up loyalty and payment cards',
+                        $translations['membership_discounts_and_discount_groups'] ?? 'Membership discounts and discount groups',
+                        $translations['earning_points_redeeming_and_sales_points'] ?? 'Earning points, redeeming and sales points'
                     );
 
                     foreach ($benefits as $benefit) : ?>
@@ -94,33 +94,33 @@ include 'components/header.php';
             $featureCards = array(
                 array(
                     'icon' => '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />',
-                    'title' => 'New Buyers',
-                    'description' => 'Attract new customers by offering a modern loyalty system. Today\'s consumers expect a good loyalty program when they choose where to shop.'
+                    'title' => $translations['new_buyers'] ?? 'New Buyers',
+                    'description' => $translations['new_buyers_desc'] ?? 'Attract new customers by offering a modern loyalty system. Today\'s consumers expect a good loyalty program when they choose where to shop.'
                 ),
                 array(
                     'icon' => '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />',
-                    'title' => 'Increasing Sales',
-                    'description' => 'Get your customers to spend more by creating tiered loyalty levels and rewarding bigger purchases.'
+                    'title' => $translations['increase_sales'] ?? 'Increasing Sales',
+                    'description' => $translations['increase_sales_desc'] ?? 'Get your customers to spend more by creating tiered loyalty levels and rewarding bigger purchases.'
                 ),
                 array(
                     'icon' => '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />',
-                    'title' => 'Increase Connection',
-                    'description' => 'Build stronger connections with your customers through personalized offers and communications.'
+                    'title' => $translations['increase_connection'] ?? 'Increase Connection',
+                    'description' => $translations['increase_connection_desc'] ?? 'Build stronger connections with your customers through personalized offers and communications.'
                 ),
                 array(
                     'icon' => '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" />',
-                    'title' => 'Customizable Loyalty Programs',
-                    'description' => 'Create loyalty programs that fit your specific business needs with flexible options.'
+                    'title' => $translations['customizable_loyalty_program'] ?? 'Customizable Loyalty Programs',
+                    'description' => $translations['customizable_loyalty_program_desc'] ?? 'Create loyalty programs that fit your specific business needs with flexible options.'
                 ),
                 array(
                     'icon' => '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />',
-                    'title' => 'Track Customer Engagement',
-                    'description' => 'Get detailed insights into how customers engage with your loyalty program.'
+                    'title' => $translations['track_customer_engagement'] ?? 'Track Customer Engagement',
+                    'description' => $translations['track_customer_engagement_desc'] ?? 'Get detailed insights into how customers engage with your loyalty program.'
                 ),
                 array(
                     'icon' => '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4" />',
-                    'title' => 'Card Management Made Simple',
-                    'description' => 'Our intuitive dashboard makes it easy to create and manage loyalty cards.'
+                    'title' => $translations['card_management_made_simple'] ?? 'Card Management Made Simple',
+                    'description' => $translations['card_management_made_simple_desc'] ?? 'Our intuitive dashboard makes it easy to create and manage loyalty cards.'
                 )
             );
             
@@ -234,19 +234,19 @@ include 'components/header.php';
                     [
                         'name' => 'Cameron Williamson',
                         'position' => 'CEO & Owner, Vision Trust',
-                        'quote' => 'Our experience with the company has been exceptional. Their loyalty program has helped us retain customers and increase sales.',
+                        'quote' => $translations['cameron_williamson'] ??  'Our experience with the company has been exceptional. Their loyalty program has helped us retain customers and increase sales.',
                         'image' => 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80'
                     ],
                     [
                         'name' => 'Esther Howard',
                         'position' => 'Marketing Director, Elevate Brands',
-                        'quote' => 'The loyalty system from GoNpay has transformed how we interact with our customers. The ease of setup and the robust features have made it an invaluable tool for our business.',
+                        'quote' => $translations['esther_howard'] ?? 'The loyalty system from GoNpay has transformed how we interact with our customers. The ease of setup and the robust features have made it an invaluable tool for our business.',
                         'image' => 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80'
                     ],
                     [
                         'name' => 'Robert Fox',
                         'position' => 'Founder, Tech Innovations',
-                        'quote' => "We've seen a dramatic increase in customer retention since implementing GoNpay. The mobile app integration was seamless, and our customers love the convenience it provides.",
+                        'quote' => $translations['robert_fox'] ?? "We've seen a dramatic increase in customer retention since implementing GoNpay. The mobile app integration was seamless, and our customers love the convenience it provides.",
                         'image' => 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80'
                     ]
                 ];
@@ -595,44 +595,44 @@ include 'components/header.php';
 </section>
 <!-- FAQ Section -->
 <?php
-$faqs = [
-    [
-        'question' => 'What is Gonpay for Business?',
-        'answer' => 'Gonpay for Business is a digital loyalty platform that allows companies to easily create, manage, and distribute loyalty cards and rewards directly to customers’ smartphones. It helps you increase engagement, drive repeat visits, and modernize your loyalty program.'
-    ],
-    [
-        'question' => 'How can my business add its loyalty card to Gonpay?',
-        'answer' => 'Simply register your business through our B2B portal. Once you\'re set up, you can create your digital card by uploading your logo, setting card details, and linking your barcode or card number system. Our team can assist with integration if needed.'
-    ],
-    [
-        'question' => 'Is there an API or integration available for our POS system?',
-        'answer' => 'Yes, we offer API access and integration options to connect your POS system directly to your loyalty program managed in the digital Gonpay platform. This enables automatic syncing of customer points, card status, and real-time updates at checkout.'
-    ],
-    [
-        'question' => 'Can we track customer activity or campaign performance?',
-        'answer' => 'Absolutely. The Gonpay Business Dashboard gives you access to real-time analytics, including customer scans, usage trends, and reward redemptions. This helps you optimize campaigns and understand customer behavior.'
-    ],
-    [
-        'question' => 'How do customers use our card in the app?',
-        'answer' => 'Customers simply download the Gonpay app, add your loyalty card by scanning or selecting it from the app, and show the barcode at checkout to collect or redeem points—just like they would with a physical card.'
-    ],
-    [
-        'question' => 'Is there a cost for businesses to use Gonpay?',
-        'answer' => 'We offer flexible pricing plans depending on your business size and needs, including options for small retailers, franchises, and enterprise partners. Contact our sales team for a custom quote.'
-    ],
-    [
-        'question' => 'How secure is the data shared with Gonpay?',
-        'answer' => 'Security is our top priority. We use encrypted data transmission, secure cloud storage, and GDPR-compliant practices to ensure your business and customer information is protected at all times.'
-    ],
-    [
-        'question' => 'Can we run promotions or targeted campaigns through Gonpay?',
-        'answer' => 'Yes! You can create special promotions, discounts, or reward boosts targeted at specific customer segments. Notifications can be sent through the app to increase visibility and engagement.'
-    ],
-    [
-        'question' => 'What support is available for business partners?',
-        'answer' => 'We provide dedicated onboarding, technical support, and account management to ensure your success. Whether you\'re launching your first digital card or scaling up a national program, we\'re here to help.'
-    ],
-];
+    $faqs = [
+        [
+            'question' => $translations['what_is_gonpay_for_business'] ?? 'What is Gonpay for Business?',
+            'answer' => $translations['gonpay_for_business_answer'] ?? 'Gonpay for Business is a digital loyalty platform that allows companies to easily create, manage, and distribute loyalty cards and rewards directly to customers’ smartphones. It helps you increase engagement, drive repeat visits, and modernize your loyalty program.'
+        ],
+        [
+            'question' => $translations['how_can_my_business_add_loyalty_card'] ?? 'How can my business add its loyalty card to Gonpay?',
+            'answer' => $translations['add_loyalty_card_answer'] ?? 'Simply register your business through our B2B portal. Once you\'re set up, you can create your digital card by uploading your logo, setting card details, and linking your barcode or card number system. Our team can assist with integration if needed.'
+        ],
+        [
+            'question' => $translations['api_integration_pos_system'] ?? 'Is there an API or integration available for our POS system?',
+            'answer' => $translations['api_integration_answer'] ?? 'Yes, we offer API access and integration options to connect your POS system directly to your loyalty program managed in the digital Gonpay platform. This enables automatic syncing of customer points, card status, and real-time updates at checkout.'
+        ],
+        [
+            'question' => $translations['track_customer_activity_campaign_performance'] ?? 'Can we track customer activity or campaign performance?',
+            'answer' => $translations['track_activity_answer'] ?? 'Absolutely. The Gonpay Business Dashboard gives you access to real-time analytics, including customer scans, usage trends, and reward redemptions. This helps you optimize campaigns and understand customer behavior.'
+        ],
+        [
+            'question' => $translations['how_do_customers_use_our_card_in_app'] ?? 'How do customers use our card in the app?',
+            'answer' => $translations['use_card_answer'] ?? 'Customers simply download the Gonpay app, add your loyalty card by scanning or selecting it from the app, and show the barcode at checkout to collect or redeem points—just like they would with a physical card.'
+        ],
+        [
+            'question' => $translations['cost_for_businesses_to_use_gonpay'] ?? 'Is there a cost for businesses to use Gonpay?',
+            'answer' => $translations['cost_answer'] ?? 'We offer flexible pricing plans depending on your business size and needs, including options for small retailers, franchises, and enterprise partners. Contact our sales team for a custom quote.'
+        ],
+        [
+            'question' => $translations['how_secure_is_data_shared_with_gonpay'] ?? 'How secure is the data shared with Gonpay?',
+            'answer' => $translations['data_security_answer'] ?? 'Security is our top priority. We use encrypted data transmission, secure cloud storage, and GDPR-compliant practices to ensure your business and customer information is protected at all times.'
+        ],
+        [
+            'question' => $translations['can_we_run_promotions_targeted_campaigns'] ?? 'Can we run promotions or targeted campaigns through Gonpay?',
+            'answer' => $translations['promotions_campaigns_answer'] ?? 'Yes! You can create special promotions, discounts, or reward boosts targeted at specific customer segments. Notifications can be sent through the app to increase visibility and engagement.'
+        ],
+        [
+            'question' => $translations['support_for_business_partners'] ?? 'What support is available for business partners?',
+            'answer' => $translations['support_answer'] ?? 'We provide dedicated onboarding, technical support, and account management to ensure your success. Whether you\'re launching your first digital card or scaling up a national program, we\'re here to help.'
+        ],
+    ];
 ?>
 
 <!-- FAQ Section -->
