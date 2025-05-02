@@ -29,17 +29,164 @@
   <link href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.5/swiper-bundle.min.css" rel="stylesheet" crossorigin="anonymous"/>
 
   <style>
-    body { font-family: 'Poppins', sans-serif; }
-    .ring-spin { animation: spin 20s linear infinite; }
-    @keyframes spin { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
-    .float { animation: floating 3s ease-in-out infinite; }
-    @keyframes floating { 0% { transform: translateY(0); } 50% { transform: translateY(-10px); } 100% { transform: translateY(0); } }
-    .testimonialSwiper { padding-bottom: 40px; }
-    .testimonial-content { opacity: 0; transform: translateY(20px); transition: all 0.8s ease; }
-    .swiper-slide-active .testimonial-content { opacity: 1; transform: translateY(0); }
-    .swiper-pagination-bullet { width: 10px; height: 10px; background: #e2e8f0; opacity: 1; }
-    .swiper-pagination-bullet-active { background: #ff6b00; transform: scale(1.2); }
-  </style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+        
+        /* Stats grid */
+        .stats-container {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+        }
+        
+        .stats-container > div {
+            border-right: 1px solid theme('colors.gonpay-border');
+        }
+        
+        .stats-container > div:last-child {
+            border-right: none;
+        }
+        
+        /* Hover effects */
+        .nav-link {
+            position: relative;
+        }
+        
+        .nav-link:after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            background: theme('colors.gonpay-orange');
+            left: 0;
+            bottom: -5px;
+            transition: width 0.3s ease;
+        }
+        
+        .nav-link:hover:after {
+            width: 100%;
+        }
+        
+        .btn-orange {
+            transition: all 0.3s ease;
+        }
+        
+        .btn-orange:hover {
+            background-color: theme('colors.gonpay-orange-dark');
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(255, 122, 0, 0.2);
+        }
+        
+        .login-link {
+            transition: all 0.3s ease;
+        }
+        
+        .login-link:hover {
+            color: theme('colors.gonpay-orange-dark');
+            text-decoration: underline;
+        }
+        
+        /* Improved responsiveness */
+        @media (max-width: 1024px) {
+            .stats-container {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            
+            .stats-container > div:nth-child(2) {
+                border-right: none;
+            }
+            
+            .stats-container > div:nth-child(3),
+            .stats-container > div:nth-child(4) {
+                border-top: 1px solid theme('colors.gonpay-border');
+            }
+        }
+        
+        @media (max-width: 640px) {
+            .stats-container {
+                grid-template-columns: 1fr;
+            }
+            
+            .stats-container > div {
+                border-right: none;
+                border-bottom: 1px solid theme('colors.gonpay-border');
+            }
+            
+            .stats-container > div:last-child {
+                border-bottom: none;
+            }
+        }
+        
+        /* Header shadow on scroll */
+        .header-shadow {
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+        }
+
+        /* Ring animation */
+        .ring-spin {
+            animation: spin 20s linear infinite;
+        }
+        
+        @keyframes spin {
+            from {
+                transform: rotate(0deg);
+            }
+            to {
+                transform: rotate(360deg);
+            }
+        }
+        
+        /* Floating animation for images */
+        .float {
+            animation: floating 3s ease-in-out infinite;
+        }
+        
+        @keyframes floating {
+            0% {
+                transform: translateY(0px);
+            }
+            50% {
+                transform: translateY(-10px);
+            }
+            100% {
+                transform: translateY(0px);
+            }
+        }
+    </style>
+
+        <!-- Swiper CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.5/swiper-bundle.min.css" integrity="sha512-okkLcBJE+U19Dpd0QdHA1wn4YY6rW3CwaxeLJT3Jmj9ZcNSbln/VYw8UdqXRIwLX7J8PmtHs0I/FPAhozFvXKg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<style>
+    .testimonialSwiper {
+        padding-bottom: 40px;
+    }
+    
+    .testimonial-content {
+        opacity: 0;
+        transform: translateY(20px);
+        transition: all 0.8s ease;
+    }
+    
+    .swiper-slide-active .testimonial-content {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    
+    .swiper-pagination-bullet {
+        width: 10px;
+        height: 10px;
+        background: #e2e8f0;
+        opacity: 1;
+    }
+    
+    .swiper-pagination-bullet-active {
+        background: #ff6b00; /* gonpay-orange */
+        transform: scale(1.2);
+    }
+</style>
 </head>
 
 <body class="bg-white">
@@ -50,8 +197,8 @@
         <img src="images/logo.png" alt="GoNpay Logo" class="h-8 lg:h-10">
       </a>
       <nav class="hidden lg:flex space-x-10">
-        <a href="index.php" class="nav-link"><?= t('explore_loyalty') ?></a>
-        <a href="company.php" class="nav-link"><?= t('about_us') ?></a>
+        <a href="index.php" class="nav-link text-[#1A1A1A] font-medium text-base hover:text-gonpay-orange transition-colors"><?= t('explore_loyalty') ?></a>
+        <a href="company.php" class="nav-link text-[#1A1A1A] font-medium text-base hover:text-gonpay-orange transition-colors"><?= t('about_us') ?></a>
       </nav>
       <a href="business.php" class="hidden md:block btn-orange bg-gonpay-orange text-white font-medium py-2.5 px-6 rounded-full ms-12"><?= t('for_business') ?></a>
     </div>
@@ -59,9 +206,9 @@
     <div class="flex items-center space-x-4">
       <!-- Language Dropdown -->
       <div class="hidden md:flex items-center space-x-1 cursor-pointer group relative">
-        <div class="flex items-center space-x-2 py-2 px-3 rounded-lg hover:bg-gray-50">
+        <div class="flex items-center space-x-2 py-2 px-3 rounded-lg hover:bg-gray-50 xl:max-w-[160px] xl:gap-[3px]">
           <img id="selected-lang-flag" src="https://cdn.jsdelivr.net/npm/flag-icon-css@3.5.0/flags/4x3/<?= $currentFlag ?>.svg" alt="<?= $lang ?>" class="w-6 h-4">
-          <span id="selected-lang"><?= t($language) ?></span>
+          <span class="font-medium text-[#1A1A1A]" id="selected-lang"><?= t($language) ?></span>
           <svg class="h-4 w-4 transition-transform group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
           </svg>
@@ -85,12 +232,26 @@
 
 <!-- Your page content goes here -->
 
+<div class="overflow-hidden">
+
+
+    <!-- Add this script before the closing body tag -->
 <script>
-  // Mobile menu toggle if needed
-  document.getElementById('mobile-menu-button')?.addEventListener('click', () => {
-    const menu = document.getElementById('mobile-menu');
-    menu?.classList.toggle('hidden');
-  });
+    document.addEventListener('DOMContentLoaded', function() {
+        const languageOptions = document.querySelectorAll('.lang-option');
+        const selectedLangFlag = document.getElementById('selected-lang-flag');
+        const selectedLang = document.getElementById('selected-lang');
+
+        languageOptions.forEach(option => {
+            option.addEventListener('click', function(e) {
+                e.preventDefault();
+                const lang = this.dataset.lang;
+                const flag = this.dataset.flag;
+                const text = this.querySelector('span').textContent;
+                
+                selectedLangFlag.src = `https://cdn.jsdelivr.net/npm/flag-icon-css@3.5.0/flags/4x3/${flag}.svg`;
+                selectedLang.textContent = text;
+            });
+        });
+    });
 </script>
-</body>
-</html>

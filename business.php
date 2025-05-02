@@ -52,7 +52,7 @@ include 'components/header.php';
 </div>
 <!-- Text Section (Right Side) -->
 <div class="lg:w-1/2 px-4 sm:px-6 lg:pl-12 mt-12 lg:mt-0" data-aos="fade-left" data-aos-duration="1000">
-<h1 class="text-3xl md:text-4xl font-bold text-gonpay-dark mb-6 leading-tight"><?= $translations['modern_loyalty_system'] ?? "Modern Loyalty System" ?><br/><?= $translations['adapted_to'] ?? "Adapted To" ?><span class="text-gonpay-orange"><?= $translations['your_business'] ?? "Your Business" ?><br/><?= $translations['specifics'] ?? "Specifics" ?></span>
+<h1 class="text-3xl md:text-4xl font-bold text-gonpay-dark mb-6 leading-tight"><?= $translations['modern_loyalty_system'] ?? "Modern Loyalty System" ?><br/><?= $translations['adapted_to'] ?? "Adapted To" ?> <span class="text-gonpay-orange"><?= $translations['your_business'] ?? "Your Business" ?><br/><?= $translations['specifics'] ?? "Specifics" ?></span>
 </h1>
 <p class="text-gray-600 text-lg mb-8 max-w-lg"><?= $translations['all_microelements_built_so_it_has_never_been_easie'] ?? "All micro-elements built so it has never been easier to increase sales!" ?></p>
 <!-- Benefits Checklist -->
@@ -85,7 +85,7 @@ include 'components/header.php';
 <!-- Why GoNpay Section -->
 <section class="container mx-auto px-4 sm:px-6 py-16 mt-8">
 <div class="text-center mb-16" data-aos="fade-up" data-aos-duration="1000">
-<h2 class="text-3xl md:text-4xl font-bold text-gonpay-dark"><?= $translations['why'] ?? "Why" ?><span class="text-gonpay-orange"><?= $translations['gonpay'] ?? "GoNpay?" ?></span>
+<h2 class="text-3xl md:text-4xl font-bold text-gonpay-dark"><?= $translations['why'] ?? "Why" ?> <span class="text-gonpay-orange"><?= $translations['gonpay'] ?? "GoNpay?" ?></span>
 </h2>
 <p class="text-gray-600 text-lg mt-4 max-w-2xl mx-auto"><?= $translations['because_it_is_the_market_leading_solution'] ?? "Because it is the market leading solution" ?></p>
 </div>
@@ -222,7 +222,7 @@ include 'components/header.php';
 <!-- What Our Client Say Section -->
 <section class="container mx-auto px-4 sm:px-6 py-24 mt-12">
 <div class="text-center mb-16" data-aos="fade-up" data-aos-duration="1000">
-<h2 class="text-3xl md:text-4xl font-bold text-gonpay-dark"><?= $translations['what_our_client_say'] ?? "What Our Client Say" ?><span class="text-gonpay-orange"><?= $translations['about_us_2'] ?? "About Us?" ?></span>
+<h2 class="text-3xl md:text-4xl font-bold text-gonpay-dark"><?= $translations['what_our_client_say'] ?? "What Our Client Say" ?> <span class="text-gonpay-orange"><?= $translations['about_us_2'] ?? "About Us?" ?></span>
 </h2>
 </div>
 <div class="max-w-4xl mx-auto" data-aos="fade-up" data-aos-delay="200">
@@ -260,7 +260,7 @@ include 'components/header.php';
 <div class="flex flex-col items-center testimonial-content">
 <!-- Client Image -->
 <div class="mb-8">
-<img alt="<?php echo $testimonial['image']; ?>" class="w-20 h-20 rounded-full object-cover border-4 border-gray-100" src="<?php echo $testimonial['name']; ?>"/>
+<img src="<?php echo $testimonial['image']; ?>" class="w-20 h-20 rounded-full object-cover border-4 border-gray-100" alt="<?php echo $testimonial['name']; ?>"/>
 </div>
 <!-- Quote Content with Quote Marks -->
 <div class="relative">
@@ -313,7 +313,7 @@ include 'components/header.php';
 <div class="flex flex-col md:flex-row items-start">
 <!-- Left Content -->
 <div class="md:w-1/2 pr-0 md:pr-12 mb-12 md:mb-0" data-aos="fade-right" data-aos-duration="1000">
-<h2 class="text-3xl md:text-4xl font-bold text-gonpay-dark mb-6"><?= $translations['see_our'] ?? "See Our" ?><span class="text-gonpay-orange"><?= $translations['trusted'] ?? "Trusted" ?><br/><?= $translations['partners'] ?? "Partners" ?></span>
+<h2 class="text-3xl md:text-4xl font-bold text-gonpay-dark mb-6"><?= $translations['see_our'] ?? "See Our" ?> <span class="text-gonpay-orange"><?= $translations['trusted'] ?? "Trusted" ?><br/><?= $translations['partners'] ?? "Partners" ?></span>
 </h2>
 <p class="text-gray-600 mb-6"><?= $translations['vero_homero_perfecto_mei_ut_sonet_aperiam_an_nec_n'] ?? "Vero homero perfecto mei ut, sonet aperiam an nec. Ni
                 nec dict altera legimu. Me vita de lege ndos expet end is ad.

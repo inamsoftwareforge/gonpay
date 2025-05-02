@@ -93,7 +93,6 @@
 </li>
 <!--<li>-->
 <!--    <a href="faq.php" class="text-gray-600 hover:text-gonpay-orange transition-colors">-->
-<?= $translations['faq'] ?? "FAQ" ?>
 <!--    </a>-->
 <!--</li>-->
 <li>

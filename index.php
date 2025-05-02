@@ -32,7 +32,7 @@ include 'components/header.php';
 <img alt="GoNpay App Multiple Cards" class="relative z-10 max-w-sm mx-auto drop-shadow-xl transition-all duration-500 hover:scale-105 float" src="images/sec2.png"/>
 </div>
 <div class="lg:w-1/2 mt-12 lg:mt-0 lg:pl-12 px-4 sm:px-0" data-aos="fade-left" data-aos-duration="1000">
-<h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-gonpay-dark mb-6 leading-tight"><?= $translations['all_you_loyalty_cards'] ?? "All You Loyalty Cards" ?><br/><?= $translations['in'] ?? "In" ?><span class="text-gonpay-orange"><?= $translations['one_app'] ?? "One App" ?></span>
+<h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-gonpay-dark mb-6 leading-tight"><?= $translations['all_you_loyalty_cards'] ?? "All You Loyalty Cards" ?><br/><?= $translations['in'] ?? "In" ?><span class="text-gonpay-orange"> <?= $translations['one_app'] ?? "One App" ?></span>
 </h2>
 <p class="text-gray-600 text-lg mb-10 max-w-lg"><?= $translations['get_all_your_loyalty_cards_in_one_app_from_biggest'] ?? "Get all your loyalty cards in one app. From biggest supermarket to your local bakery. Organising your cards has never been so easy." ?></p>
 <a class="btn-orange bg-gonpay-orange text-white font-medium py-3.5 px-10 rounded-full inline-block text-lg" href="register.php"><?= $translations['sign_up_3'] ?? "Sign up" ?></a>
@@ -59,7 +59,7 @@ include 'components/header.php';
 <section class="py-24 bg-gray-50">
 <div class="container mx-auto px-6">
 <div class="text-center mb-16 px-4 sm:px-0" data-aos="fade-up" data-aos-duration="1000">
-<h2 class="text-4xl md:text-5xl font-bold mb-4"><?= $translations['some_excellent'] ?? "Some Excellent" ?><span class="text-gonpay-orange"><?= $translations['features_for_you'] ?? "Features For You" ?></span>
+<h2 class="text-4xl md:text-5xl font-bold mb-4"><?= $translations['some_excellent'] ?? "Some Excellent" ?> <span class="text-gonpay-orange"><?= $translations['features_for_you'] ?? "Features For You" ?></span>
 </h2>
 </div>
 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">

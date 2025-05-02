@@ -7,7 +7,7 @@ include 'components/header.php';
 <!-- About Company Section -->
 <section class="container mx-auto px-4 sm:px-6 pt-16 pb-12" data-aos="fade-up" data-aos-duration="1000">
 <div class="text-center max-w-4xl mx-auto">
-<h1 class="text-4xl md:text-5xl font-bold text-gonpay-dark mb-4"><?= $translations['about'] ?? "About" ?><span class="text-gonpay-orange"><?= $translations['company'] ?? "Company" ?></span>
+<h1 class="text-4xl md:text-5xl font-bold text-gonpay-dark mb-4"><?= $translations['about'] ?? "About" ?> <span class="text-gonpay-orange"><?= $translations['company'] ?? "Company" ?></span>
 </h1>
 <p class="text-gray-600 text-lg"><?= $translations['our_company_is_dedicated_to_revolutionizing_the_wa'] ?? "Our company is dedicated to revolutionizing the way businesses and customers interact through our innovative loyalty platform app. With a focus on convenience and rewards, we aim to create a seamless experience that benefits both businesses and customers alike." ?></p>
 </div>
@@ -39,7 +39,7 @@ include 'components/header.php';
 <section class="container mx-auto px-4 sm:px-6 py-16">
 <div class="flex flex-col md:flex-row items-start">
 <div class="md:w-1/3 mb-8 md:mb-0" data-aos="fade-right" data-aos-duration="1000">
-<h2 class="text-3xl md:text-4xl font-bold text-gonpay-dark mb-4"><?= $translations['our'] ?? "Our" ?><span class="text-gonpay-orange"><?= $translations['mission'] ?? "Mission" ?></span>
+<h2 class="text-3xl md:text-4xl font-bold text-gonpay-dark mb-4"><?= $translations['our'] ?? "Our" ?> <span class="text-gonpay-orange"><?= $translations['mission'] ?? "Mission" ?></span>
 </h2>
 </div>
 <div class="md:w-2/3" data-aos="fade-left" data-aos-duration="1000">
@@ -180,7 +180,7 @@ include 'components/header.php';
 </div>
 <!-- Right: Content Block -->
 <div class="md:w-1/2 flex flex-col justify-center">
-<h2 class="text-3xl font-semibold text-gray-800 mb-6"><?= $translations['our_journey'] ?? "Our Journey &amp;" ?><span class="text-orange-500 font-bold"><?= $translations['achievements'] ?? "Achievements" ?></span>
+<h2 class="text-3xl font-semibold text-gray-800 mb-6"><?= $translations['our_journey'] ?? "Our Journey &amp;" ?> <span class="text-orange-500 font-bold"><?= $translations['achievements'] ?? "Achievements" ?></span>
 </h2>
 <div class="space-y-6 text-sm md:text-base">
 <!-- Item 1 -->
@@ -252,7 +252,7 @@ include 'components/header.php';
 </div>
 <!-- Right Side: Text Content -->
 <div class="md:w-1/2 md:pl-16" data-aos="fade-left" data-aos-duration="1000">
-<h2 class="text-3xl md:text-4xl font-bold text-gonpay-dark mb-6"><?= $translations['easy_to'] ?? "Easy To" ?><span class="text-gonpay-orange"><?= $translations['manage'] ?? "Manage" ?></span>
+<h2 class="text-3xl md:text-4xl font-bold text-gonpay-dark mb-6"><?= $translations['easy_to'] ?? "Easy To" ?> <span class="text-gonpay-orange"><?= $translations['manage'] ?? "Manage" ?></span>
 </h2>
 <p class="text-gray-600 leading-relaxed mb-6"><?= $translations['our_loyalty_card_platform_empowers_businesses_to_s'] ?? "Our loyalty card platform empowers businesses to streamline customer rewards and boost engagement. With intuitive tools, it's easy to track points, monitor customer spending, and generate insightful reports. Whether you're a small business or a growing enterprise, our user-friendly interface ensures seamless rewards management and customer satisfaction." ?></p>
 </div>
@@ -261,7 +261,7 @@ include 'components/header.php';
 <!-- Our Core Values Section -->
 <section class="container mx-auto px-4 sm:px-6 py-16" data-aos="fade-up" data-aos-duration="1000">
 <div class="text-center mb-16">
-<h2 class="text-3xl md:text-4xl font-bold text-gonpay-dark mb-6"><?= $translations['our_core'] ?? "Our Core" ?><span class="text-gonpay-orange"><?= $translations['values'] ?? "Values" ?></span>
+<h2 class="text-3xl md:text-4xl font-bold text-gonpay-dark mb-6"><?= $translations['our_core'] ?? "Our Core" ?> <span class="text-gonpay-orange"><?= $translations['values'] ?? "Values" ?></span>
 </h2>
 </div>
 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 md:gap-8"> <!-- Added responsive gap -->

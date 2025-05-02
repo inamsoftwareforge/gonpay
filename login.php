@@ -57,7 +57,7 @@ include 'components/header.php';
 <button class="w-full py-3 px-4 bg-gonpay-orange text-white font-semibold rounded-full hover:bg-gonpay-orange-dark transition-all duration-300 btn-orange uppercase" type="submit"><?= $translations['login'] ?? "LOGIN" ?></button>
 </form>
 <div class="mt-8 text-center">
-<p class="text-gray-600"><?= $translations['dont_have_an_account'] ?? "Don't have an account?" ?><a class="text-gonpay-orange hover:text-gonpay-orange-dark font-medium transition-all duration-300" href="register.php"><?= $translations['sign_up_2'] ?? "Sign Up" ?></a>
+<p class="text-gray-600"><?= $translations['dont_have_an_account'] ?? "Don't have an account?" ?> <a class="text-gonpay-orange hover:text-gonpay-orange-dark font-medium transition-all duration-300" href="register.php"><?= $translations['sign_up_2'] ?? "Sign Up" ?></a>
 </p>
 </div>
 </div>

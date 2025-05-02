@@ -60,13 +60,13 @@ include 'components/header.php';
 <div class="mb-8">
 <div class="flex items-start">
 <input class="h-4 w-4 text-gonpay-orange border-gray-300 rounded focus:ring-gonpay-orange" id="terms" name="terms" type="checkbox"/>
-<label class="ml-2 block text-sm text-gray-600" for="terms"><?= $translations['by_subscribing_you_agree_to_our'] ?? "By subscribing, you agree to our" ?><a class="text-gonpay-orange hover:text-gonpay-orange-dark" href="legal_agreement.php"><?= $translations['privacy_policy'] ?? "Privacy Policy" ?></a><?= $translations['and_consent_to_receive_updates_from_our_company'] ?? "and consent to receive updates from our company." ?></label>
+<label class="ml-2 block text-sm text-gray-600" for="terms"><?= $translations['by_subscribing_you_agree_to_our'] ?? "By subscribing, you agree to our" ?> <a class="text-gonpay-orange hover:text-gonpay-orange-dark" href="legal_agreement.php"><?= $translations['privacy_policy'] ?? "Privacy Policy" ?></a> <?= $translations['and_consent_to_receive_updates_from_our_company'] ?? "and consent to receive updates from our company." ?></label>
 </div>
 </div>
 <button class="w-full py-3 px-4 bg-gonpay-orange text-white font-semibold rounded-full hover:bg-gonpay-orange-dark transition-all duration-300 btn-orange uppercase" type="submit"><?= $translations['sign_up'] ?? "SIGN UP" ?></button>
 </form>
 <div class="mt-8 text-center">
-<p class="text-gray-600"><?= $translations['already_have_an_account'] ?? "Already have an account?" ?><a class="text-gonpay-orange hover:text-gonpay-orange-dark font-medium transition-all duration-300" href="login.php"><?= $translations['login_2'] ?? "Login" ?></a>
+<p class="text-gray-600"><?= $translations['already_have_an_account'] ?? "Already have an account?" ?> <a class="text-gonpay-orange hover:text-gonpay-orange-dark font-medium transition-all duration-300" href="login.php"><?= $translations['login_2'] ?? "Login" ?></a>
 </p>
 </div>
 </div>
