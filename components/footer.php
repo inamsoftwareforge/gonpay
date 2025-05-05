@@ -25,7 +25,7 @@
             <!--    </a>-->
             <!--    </div>-->
             <!--</div>-->
-            <div class="w-full md:w-auto">
+            <div class="w-full flex justify-end">
                 <div class="flex flex-col items-start space-y-2">
                     <div class="flex items-center space-x-1">
                         <span
@@ -74,7 +74,7 @@
                 <div class="flex flex-col pe-12">
                     <div class="flex items-center border-b border-gray-300 pb-2 mb-4">
                         <input class="w-full bg-transparent focus:outline-none text-gray-700"
-                            placeholder="Email address" type="email" />
+                            placeholder="<?= $translations['enter_email_address'] ??  'Email address' ?>" type="email" />
                         <button
                             class="bg-gonpay-orange text-white font-medium py-1 px-4 rounded-full hover:bg-opacity-90 transition-colors ml-2"><?= $translations['subscribe'] ?? "Subscribe" ?></button>
                     </div>
@@ -103,32 +103,34 @@
                 </ul>
             </div>
             <!-- Help Column -->
-            <div class="w-full md:w-auto">
-                <h3 class="text-gray-800 text-xl font-bold mb-4 text-left"><?= $translations['help'] ?? "Help" ?></h3>
-                <ul class="space-y-3 text-left">
-                    <li>
-                        <a class="text-gray-600 hover:text-gonpay-orange transition-colors"
-                            href="legal_agreement.php"><?= $translations['legal_agreement'] ?? "Legal Agreement" ?></a>
-                    </li>
-                    <!--<li>-->
-                    <!--    <a href="faq.php" class="text-gray-600 hover:text-gonpay-orange transition-colors">-->
-                    <!--    </a>-->
-                    <!--</li>-->
-                    <li>
-                        <?php 
-                    // Determine the current page and set the appropriate FAQ link
-                    $currentPage = basename($_SERVER['PHP_SELF']);
-                    $faqLink = ($currentPage === 'business.php') ? '#faqs' : '/index.php#faqs';
-                    ?>
-                        <a class="text-gray-600 hover:text-gonpay-orange transition-colors"
-                            href="<?php echo $faqLink; ?>"><?= $translations['faq'] ?? "FAQ" ?></a>
-                    </li>
-                    <!--<li>-->
-                    <!--    <a href="/business.php#faq" class="text-gray-600 hover:text-gonpay-orange transition-colors">-->
-                    <!--        Business FAQ-->
-                    <!--    </a>-->
-                    <!--</li>-->
-                </ul>
+            <div class="w-full flex justify-end">
+                <div class="flex flex-col">
+                    <h3 class="text-gray-800 text-xl font-bold mb-4 text-left"><?= $translations['help'] ?? "Help" ?></h3>
+                    <ul class="space-y-3 text-left">
+                        <li>
+                            <a class="text-gray-600 hover:text-gonpay-orange transition-colors"
+                                href="legal_agreement.php"><?= $translations['legal_agreement'] ?? "Legal Agreement" ?></a>
+                        </li>
+                        <!--<li>-->
+                        <!--    <a href="faq.php" class="text-gray-600 hover:text-gonpay-orange transition-colors">-->
+                        <!--    </a>-->
+                        <!--</li>-->
+                        <li>
+                            <?php 
+                        // Determine the current page and set the appropriate FAQ link
+                        $currentPage = basename($_SERVER['PHP_SELF']);
+                        $faqLink = ($currentPage === 'business.php') ? '#faqs' : '/index.php#faqs';
+                        ?>
+                            <a class="text-gray-600 hover:text-gonpay-orange transition-colors"
+                                href="<?php echo $faqLink; ?>"><?= $translations['faq'] ?? "FAQ" ?></a>
+                        </li>
+                        <!--<li>-->
+                        <!--    <a href="/business.php#faq" class="text-gray-600 hover:text-gonpay-orange transition-colors">-->
+                        <!--        Business FAQ-->
+                        <!--    </a>-->
+                        <!--</li>-->
+                    </ul>
+                </div>
             </div>
         </div>
         <!-- Copyright -->

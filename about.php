@@ -171,10 +171,10 @@ include 'components/header.php';
                         data-aos-delay="<?php echo $delay; ?>">
                         <!-- Offer Image -->
                         <div class="w-full p-4">
-                            <img alt="<?php echo $offer['image']; ?>"
+                            <img src="<?php echo $offer['image']; ?>"
                                 class="w-full object-cover rounded-lg shadow-lg hover:scale-105 transition-all duration-500"
                                 data-aos="zoom-in" data-aos-delay="<?php echo $offer['title']; ?>"
-                                src="<?php echo $delay + 100; ?>" />
+                                alt="<?php echo $delay + 100; ?>" />
                         </div>
                         <!-- Offer Info -->
                         <div class="flex justify-between items-center p-4">

@@ -69,7 +69,7 @@ include 'components/header.php';
                             for="email"><?= $translations['email'] ?? "Email" ?></label>
                         <input
                             class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-gonpay-orange focus:border-gonpay-orange transition-all duration-300"
-                            id="email" name="email" placeholder="Enter your email" type="email" />
+                            id="email" name="email" placeholder="<?= $translations['enter_your_email'] ?? 'Enter your email' ?>" type="email" />
                     </div>
                     <div class="mb-6">
                         <label class="block text-gonpay-dark font-medium mb-2"
@@ -77,7 +77,7 @@ include 'components/header.php';
                         <div class="relative">
                             <input
                                 class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-gonpay-orange focus:border-gonpay-orange transition-all duration-300 pr-10"
-                                id="password" name="password" placeholder="Enter your Password" type="password" />
+                                id="password" name="password" placeholder="<?= $translations['enter_your_password'] ?? 'Enter your Password' ?>" type="password" />
                             <button class="absolute right-3 top-1/2 transform -translate-y-1/2 text-gray-500"
                                 type="button">
                                 <i class="far fa-eye"></i>

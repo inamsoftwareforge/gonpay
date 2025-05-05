@@ -46,9 +46,9 @@ include 'components/header.php';
                     <div class="swiper-slide" data-aos="fade-up" data-aos-delay="<?php echo $index * 100; ?>">
                         <a class="flex items-center justify-center px-4 transition-transform hover:scale-105 group"
                             href="about.php">
-                            <img alt="<?php echo $store['logo']; ?>"
+                            <img src="<?php echo $store['logo']; ?>"
                                 class="h-16 w-16 object-cover rounded-lg shadow-sm group-hover:shadow-md transition-shadow"
-                                src="<?php echo $store['name']; ?>" />
+                                alt="<?php echo $store['name']; ?>" />
                             <span
                                 class="ml-3 text-gray-700 font-medium group-hover:text-gonpay-orange transition-colors"><?php echo $store['name']; ?></span>
                         </a>

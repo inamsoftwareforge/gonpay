@@ -373,6 +373,32 @@
   "earning_points_redeeming_and_sales_points": "Punktide teenimine, lunastamine ja müügipunktid",
   "cameron_williamson": "Meie kogemus ettevõttega on olnud erakordne. Nende lojaalsusprogramm on aidanud meil kliente hoida ja müüki suurendada.",
   "esther_howard": "GoNpay lojaalsussüsteem on muutnud meie suhtlemist klientidega. Seadistamise lihtsus ja tugevad funktsioonid on teinud sellest meie ettevõttele hindamatu tööriista.",
-  "robert_fox": "Pärast GoNpay kasutuselevõttu oleme näinud dramaatilist klientide hoidmise kasvu. Mobiilirakenduse integratsioon oli sujuv ja meie kliendid armastavad mugavust, mida see pakub."
+  "robert_fox": "Pärast GoNpay kasutuselevõttu oleme näinud dramaatilist klientide hoidmise kasvu. Mobiilirakenduse integratsioon oli sujuv ja meie kliendid armastavad mugavust, mida see pakub.",
+  "enter_email_address" : "E-posti aadress",
+  "enter_your_password" : "Sisestage oma parool",
+  "enter_your_email" : "Sisestage oma e-post",
+  "introduction_section" : "1. Sissejuhatus",
+  "definitions_section" : "2. Mõisted",
+  "managing_your_account_section" : "3. Konto avamine ja haldamine",
+  "operation_of_mobile_wallet" : "4. Mobiilse rahakoti toimimine",
+  "loyalty_benefits_section" : "5. Lojaalsusprogrammi eelised",
+  "payment_services_section" : "6. Makse teenused",
+  "consumer_data_protection" : "7. Tarbijate andmete kaitse",
+  "protection_personal_data_section" : "8. Isikuandmete kaitse",
+  "security_procedures_section" : "9. Turvaprotseduurid",
+  "avalibility_of_services_section" : "10. Teenuste kättesaadavus",
+  "rights_and_oligations_section" : "11. Õigused ja kohustused",
+  "disputes_and_remedies_section" : "12. Vaidlused ja õiguskaitsevahendid",
+  "agreement_validity_section" : "13. Lepingu kehtivus ja muudatused",
+  "communication_and_consultations" : "7. Suhtlus ja konsultatsioonid",
+  "info_for_consumer" : "8. Teave tarbijale",
+  "protection_personal_data_section_9" : "9. Isikuandmete kaitse",
+  "security_procedures_section_10" : "10. Turvaprotseduurid",
+  "avalibility_of_services_section_11" : "11. Teenuste kättesaadavus",
+  "rights_and_oligations_section_12" : "12. Õigused ja kohustused",
+  "disputes_requests_13" : "13. Vaidlused ja taotlused",
+  "agreement_validity_amendments" : "14. Lepingu kehtivus ja muudatused"
+
+
 
 }

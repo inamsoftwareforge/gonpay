@@ -373,5 +373,31 @@
     "earning_points_redeeming_and_sales_points": "Punktu pelnīšana, izpirkšana un pārdošanas punkti",
     "cameron_williamson": "Mūsu pieredze ar uzņēmumu ir bijusi izcila. Viņu lojalitātes programma palīdzēja mums saglabāt klientus un palielināt pārdošanas apjomus.",
     "esther_howard": "GoNpay lojalitātes sistēma ir mainījusi mūsu mijiedarbību ar klientiem. Uzstādīšanas vieglums un spēcīgās funkcijas padarījušas to par nenovērtējamu rīku mūsu biznesam.",
-    "robert_fox": "Kopš GoNpay ieviešanas mēs esam redzējuši dramatisks pieaugumu klientu noturēšanā. Mobilās lietotnes integrācija bija nevainojama, un mūsu klientiem patīk ērtības, ko tā piedāvā."
+    "robert_fox": "Kopš GoNpay ieviešanas mēs esam redzējuši dramatisks pieaugumu klientu noturēšanā. Mobilās lietotnes integrācija bija nevainojama, un mūsu klientiem patīk ērtības, ko tā piedāvā.",
+    "enter_email_address" : "E-pasta adrese",
+    "enter_your_password" : "Ievadiet savu paroli",
+    "enter_your_email" : "Ievadiet savu e-pastu",
+    "introduction_section" : "1. Ievads",
+    "definitions_section" : "2. Definīcijas",
+    "managing_your_account_section" : "3. Konta atvēršana un pārvaldība",
+    "operation_of_mobile_wallet" : "4. Mobilā maciņa darbība",
+    "loyalty_benefits_section" : "5. Lojalitātes priekšrocības",
+    "payment_services_section" : "6. Maksājumu pakalpojumi",
+    "consumer_data_protection" : "7. Patērētāju datu aizsardzība",
+    "protection_personal_data_section" : "8. Personas datu aizsardzība",
+    "security_procedures_section" : "9. Drošības procedūras",
+    "avalibility_of_services_section" : "10. Pakalpojumu pieejamība",
+    "rights_and_oligations_section" : "11. Tiesības un pienākumi",
+    "disputes_and_remedies_section" : "12. Strīdi un tiesiskās aizsardzības līdzekļi",
+    "agreement_validity_section" : "13. Līguma derīgums un grozījumi",
+    "communication_and_consultations" : "7. Saziņa un konsultācijas",
+    "info_for_consumer" : "8. Informācija patērētājam",
+    "protection_personal_data_section_9" : "9. Personas datu aizsardzība",
+    "security_procedures_section_10" : "10. Drošības procedūras",
+    "avalibility_of_services_section_11" : "11. Pakalpojumu pieejamība",
+    "rights_and_oligations_section_12" : "12. Tiesības un pienākumi",
+    "disputes_requests_13" : "13. Strīdi un pieprasījumi",
+    "agreement_validity_amendments" : "14. Līguma spēkā esamība un grozījumi"
+
+
   }  

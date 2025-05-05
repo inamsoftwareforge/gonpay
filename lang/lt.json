@@ -373,5 +373,32 @@
   "earning_points_redeeming_and_sales_points": "Gauti taškus, išpirkti ir pardavimo taškai",
   "cameron_williamson": "Mūsų patirtis su šia įmone buvo išskirtinė. Jų lojalumo programa padėjo mums išlaikyti klientus ir padidinti pardavimus.",
   "esther_howard": "GoNpay lojalumo sistema transformavo mūsų sąveiką su klientais. Paprasta nustatyti ir galingos funkcijos padarė ją neįkainojamu įrankiu mūsų verslui.",
-  "robert_fox": "Nuo GoNpay įdiegimo matome dramatišką klientų išlaikymo padidėjimą. Mobiliosios programėlės integracija buvo sklandi, o mūsų klientai mėgsta patogumą, kurį ji suteikia."
+  "robert_fox": "Nuo GoNpay įdiegimo matome dramatišką klientų išlaikymo padidėjimą. Mobiliosios programėlės integracija buvo sklandi, o mūsų klientai mėgsta patogumą, kurį ji suteikia.",
+  "enter_email_address" : "El. pašto adresas",
+  "enter_your_password" : "Įveskite savo slaptažodį",
+  "enter_your_email" : "Įveskite savo el. paštą",
+  "introduction_section" : "1. Įvadas",
+  "definitions_section" : "2. Apibrėžimai",
+  "managing_your_account_section" : "3. Paskyros atidarymas ir valdymas",
+  "operation_of_mobile_wallet" : "4. Mobilios piniginės veikimas",
+  "loyalty_benefits_section" : "5. Lojalumo naudos",
+  "payment_services_section" : "6. Mokėjimo paslaugos",
+  "consumer_data_protection" : "7. Vartotojo duomenų apsauga",
+  "protection_personal_data_section" : "8. Asmens duomenų apsauga",
+  "security_procedures_section" : "9. Saugumo procedūros",
+  "avalibility_of_services_section" : "10. Paslaugų prieinamumas",
+  "rights_and_oligations_section" : "11. Teisės ir pareigos",
+  "disputes_and_remedies_section" : "12. Ginčai ir teisių gynimo priemonės",
+  "agreement_validity_section" : "13. Sutarties galiojimas ir pakeitimai",
+  "communication_and_consultations" : "7. Bendravimas ir konsultacijos",
+  "info_for_consumer" : "8. Informacija vartotojui",
+  "protection_personal_data_section_9" : "9. Asmens duomenų apsauga",
+  "security_procedures_section_10" : "10. Saugumo procedūros",
+  "avalibility_of_services_section_11" : "11. Paslaugų prieinamumas",
+  "rights_and_oligations_section_12" : "12. Teisės ir pareigos",
+  "disputes_requests_13" : "13. Ginčai ir užklausos",
+  "agreement_validity_amendments" : "14. Sutarties galiojimas ir pakeitimai"
+
+
+
 }
